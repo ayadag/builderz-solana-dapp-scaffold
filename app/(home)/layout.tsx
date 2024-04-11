@@ -1,7 +1,7 @@
 import { Toaster } from 'sonner';
-import "../styles/globals.css";
+import "/styles/globals.css";
 // import "../styles/meeting.globals.css";
-import AppBar from '../components/layout/AppBar';
+import AppBar from '/components/layout/AppBar';
 // import Footer from '../components/layout/Footer';
 import LayoutWrapper from './LayoutWrapper';
 

@@ -18,14 +18,14 @@ export default async function RootLayout({ children }) {
   return (
     // <LayoutWrapper >
       <html lang="en">
-        <body>
+         {/* <body> */}
           {/* <AppBar /> */}
-          <main className={`min-h-screen`}>
+          <div className={`min-h-screen`}>
             {children}
-          </main>
+          </div>
           {/* <Footer /> */}
           <Toaster position="bottom-right" />
-        </body>
+        {/* </body> */}
       </html>
     // </LayoutWrapper>
   );
