@@ -22,7 +22,7 @@ export default async function RootLayout({ children }: any) {
           <main className={`min-h-screen`}>
             {children}
           </main>
-          <Footer />
+          {/* <Footer /> */}
           <Toaster position="bottom-right" />
         </body>
       </html>
