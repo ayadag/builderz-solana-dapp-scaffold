@@ -1,4 +1,4 @@
-import { Toaster } from 'sonner';
+// import { Toaster } from 'sonner';
 import "/styles/meeting.globals.css";
 // import AppBar from '../components/layout/AppBar';
 // import Footer from '../components/layout/Footer';
@@ -23,7 +23,7 @@ export default async function RootLayout({ children }) {
             {children}
           {/* </main> */}
           {/* <Footer /> */}
-          <Toaster position="bottom-right" />
+          {/* <Toaster position="bottom-right" /> */}
         </body>
       </html>
     </LayoutWrapper>
