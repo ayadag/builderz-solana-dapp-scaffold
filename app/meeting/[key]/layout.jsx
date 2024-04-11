@@ -1,4 +1,4 @@
-// import { Toaster } from 'sonner';
+import { Toaster } from 'sonner';
 import "/styles/meeting.globals.css";
 // import AppBar from '../components/layout/AppBar';
 // import Footer from '../components/layout/Footer';
