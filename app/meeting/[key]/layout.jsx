@@ -1,9 +1,9 @@
 import { Toaster } from 'sonner';
-import "/styles/meeting.globals.css";
-// import "/styles/globals.css";
+// import "/styles/meeting.globals.css";
+import "/styles/globals.css";
 // import AppBar from '../components/layout/AppBar';
 // import Footer from '../components/layout/Footer';
-import MeetingLayoutWrapper from '../MeetingLayoutWrapper';
+import LayoutWrapper from '../LayoutWrapper';
 
 
 require("@solana/wallet-adapter-react-ui/styles.css");
