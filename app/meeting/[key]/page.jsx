@@ -43,7 +43,7 @@ export default function Meeting() {
       //roomName: RoomN,
       roomName: roomn,
       width: "100vw",
-      height: "100%",
+      height: "100vh",
       configOverwrite: { prejoinPageEnabled: false },
       interfaceConfigOverwrite: {
         // overwrite interface properties if you want
@@ -123,7 +123,7 @@ export default function Meeting() {
 
       <script async src="https://meet.jit.si/external_api.js"></script>
 
-      <div id="jitsi-iframe" style={{ marginBottom: 0 }}></div>
+      <div id="jitsi-iframe" style={{ marginBottom: 0, height: "100vh", width: "100vw"}}></div>
       {/*<div
         style={{
           backgroundColor: "rgb(10, 25, 41)",
