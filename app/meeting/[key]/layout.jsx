@@ -3,7 +3,7 @@ import { Toaster } from 'sonner';
 import "/styles/globals.css";
 // import AppBar from '../components/layout/AppBar';
 // import Footer from '../components/layout/Footer';
-import LayoutWrapper from '../../LayoutWrapper';
+import LayoutWrapper from '../LayoutWrapper';
 
 
 require("@solana/wallet-adapter-react-ui/styles.css");
@@ -16,7 +16,7 @@ export const metadata = {
 export default async function RootLayout({ children }) {
 
   return (
-    <MeetingLayoutWrapper >
+    <LayoutWrapper >
       <html lang="en">
         <body>
           {/* <AppBar /> */}
@@ -27,6 +27,6 @@ export default async function RootLayout({ children }) {
           <Toaster position="bottom-right" />
         </body>
       </html>
-    </MeetingLayoutWrapper>
+    </LayoutWrapper>
   );
 }

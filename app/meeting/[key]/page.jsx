@@ -97,7 +97,7 @@ export default function Meeting() {
   const handleVideoConferenceLeft = () => {
     console.log("handleVideoConferenceLeft");
     // history.push("/meet");
-    router.push('/meet');
+    router.push('/meeting');
   };
 
   // GETTING ALL PARTICIPANTS
