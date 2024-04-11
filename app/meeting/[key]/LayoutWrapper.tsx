@@ -7,8 +7,8 @@ import "/styles/meeting.globals.css";
 
 
 // TODO: Change to other toast provider
-import ContextProvider from '../../contexts/ContextProvider';
-import { ThemeProvider } from '../../contexts/ThemeProvider';
+import ContextProvider from "../../contexts/MeetingContextProvider";
+import { ThemeProvider } from "../../contexts/MeetingThemeProvider";
 
 // Providers
 
