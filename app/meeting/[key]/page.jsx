@@ -12,7 +12,7 @@ import React, { useEffect, useCallback, useContext } from "react";
 //import { MeetContext } from "../context/MeetContext";
 //import { Outlet, useParams } from "react-router-dom";
 
-const Meeting = ({ match }) => {
+export default function Meeting() {
 
   const params = useParams();
   const roomn = params.key;
@@ -135,7 +135,7 @@ const Meeting = ({ match }) => {
   );
 };
 
-export default Meeting;
+//export default Meeting;
 /*
 
 export default function Meeting(){
