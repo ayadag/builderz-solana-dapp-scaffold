@@ -17,7 +17,7 @@ export default async function RootLayout({ children }) {
   return (
     <LayoutWrapper >
       <html lang="en">
-        <body>
+        <body style={{ marginBottom: 0, height: "100vh", width: "100vw"}}>
           {/* <AppBar /> */}
           <main className={`min-h-screen`}>
             {children}
