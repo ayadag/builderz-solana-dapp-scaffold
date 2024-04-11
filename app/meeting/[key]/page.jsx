@@ -123,9 +123,9 @@ export default function Meeting() {
 
       <script async src="https://meet.jit.si/external_api.js"></script>
 
-      <div className='w-full h-screen flex justify-center items-center '>
+      {/* <div className='w-full h-screen flex justify-center items-center '> */}
       <div id="jitsi-iframe" style={{ marginBottom: 0}}></div>
-      </div>
+      {/* </div> */}
       {/*<div
         style={{
           backgroundColor: "rgb(10, 25, 41)",
