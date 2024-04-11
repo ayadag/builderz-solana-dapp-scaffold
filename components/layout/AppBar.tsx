@@ -28,6 +28,7 @@ export default function PrimarySearchAppBar() {
             <div className='hidden lg:flex items-center justify-end px-10 gap-6 '>
               <Link href="/" className="text-[#000000] dark:text-white text-[18px] font-bold navLink">Home</Link>
               <Link href="/basic" className="text-[#000000] dark:text-white text-[18px] font-bold navLink">Basic</Link>
+              <Link href="/app" className="text-[#000000] dark:text-white text-[18px] font-bold navLink">App</Link>
             </div>
           </Box>
           <Box
