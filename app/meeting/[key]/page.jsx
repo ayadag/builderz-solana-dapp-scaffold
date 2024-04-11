@@ -121,7 +121,7 @@ const Meeting = ({ match }) => {
         <p style={{ margin: 0, padding: 10 }}>Meeting name</p>
     </header>*/}
 
-      <script src="https://meet.jit.si/external_api.js"></script>
+      <script async src="https://meet.jit.si/external_api.js"></script>
 
       <div id="jitsi-iframe" style={{ marginBottom: 0 }}></div>
       {/*<div
