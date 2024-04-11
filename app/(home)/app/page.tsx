@@ -9,7 +9,7 @@ import TodoSection from '../../../components/todo/TodoSection'
 import styles from '../../../styles/Home.module.css'
 
 const Index: React.FC = async () => {
-        const { initialized, initializeUser, loading, transactionPending, completedTodos, incompleteTodos, addTodo, markTodo, removeTodo, markStaticTodo,removeStaticTodo, addStaticTodo, input,  handleChange } = useTodo()
+        const { initialized, initializeUser, loading, transactionPending, completedTodos, incompleteTodos, addTodo, markTodo, removeTodo, removeStaticTodo, addStaticTodo, input,  handleChange } = useTodo()
     
     
         return (
