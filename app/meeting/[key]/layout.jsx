@@ -1,5 +1,5 @@
 import { Toaster } from 'sonner';
-import "/styles/globals.css";
+import "/styles/meeting.globals.css";
 // import AppBar from '../components/layout/AppBar';
 // import Footer from '../components/layout/Footer';
 import LayoutWrapper from '/app/LayoutWrapper';
@@ -17,7 +17,7 @@ export default async function RootLayout({ children }) {
   return (
     <LayoutWrapper >
       <html lang="en">
-        <body style={{ marginBottom: 0, height: "100vh", width: "100vw"}}>
+        <body>
           {/* <AppBar /> */}
           <main className={`min-h-screen`}>
             {children}
