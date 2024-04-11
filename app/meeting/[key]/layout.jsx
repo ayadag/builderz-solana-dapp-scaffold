@@ -16,7 +16,7 @@ export const metadata = {
 export default async function RootLayout({ children }) {
 
   return (
-    <LayoutWrapper >
+    <MeetingLayoutWrapper >
       <html lang="en">
         <body>
           {/* <AppBar /> */}
@@ -27,7 +27,6 @@ export default async function RootLayout({ children }) {
           <Toaster position="bottom-right" />
         </body>
       </html>
-    </LayoutWrapper>
-
+    </MeetingLayoutWrapper>
   );
 }
