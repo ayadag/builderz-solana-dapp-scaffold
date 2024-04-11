@@ -43,7 +43,7 @@ export default function Meeting() {
       //roomName: RoomN,
       roomName: roomn,
       width: "100vw",
-      height: "100vh",
+      height: "100%",
       configOverwrite: { prejoinPageEnabled: false },
       interfaceConfigOverwrite: {
         // overwrite interface properties if you want
