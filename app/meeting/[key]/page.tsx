@@ -33,7 +33,7 @@ export default function Meeting() {
   // THIS IS TO EXTRACT THE NAME WHICH WAS FILLED IN THE FIRST PAGE
   //const [name] = useContext(MeetContext);
 
-  const [name] = "ayad";
+  const name = "ayad";
 
   // INTIALISE THE MEET WITH THIS FUNCTION
   const startMeet = useCallback(() => {
