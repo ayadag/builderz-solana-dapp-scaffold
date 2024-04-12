@@ -4,7 +4,7 @@ import "../../styles/globals.css";
 import AppBar2 from '../../components/layout/AppBar2';
 // import Footer from '../components/layout/Footer';
 import LayoutWrapper from './LayoutWrapper';
-import { WalletConnectProvider } from '../../components/WalletConnectProvider'
+// import { WalletConnectProvider } from '../../components/WalletConnectProvider'
 
 
 require("@solana/wallet-adapter-react-ui/styles.css");

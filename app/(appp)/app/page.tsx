@@ -1,6 +1,6 @@
 "use client";
 // import Image from "next/image";
-import Modal from '../../../components/Modal';
+// import Modal from '../../../components/Modal';
 
 import { WalletMultiButton } from '@solana/wallet-adapter-react-ui'
 import { useTodo } from '../../../hooks/todo'
@@ -9,41 +9,11 @@ import TodoSection from '../../../components/todo/TodoSection'
 import styles from '../../../styles/Home.module.css'
 
 const Index: React.FC = async () => {
-        const { initialized, initializeUser, loading, transactionPending, completedTodos, incompleteTodos, addTodo, markTodo, removeTodo } = useTodo()
+        const { loading, completedTodos, incompleteTodos, markTodo, removeTodo } = useTodo()
     
     
         return (
-            <div className={styles.container}>
-                <div className={styles.actionsContainer}>
-                    {initialized ? (
-                        <div className={styles.todoInput}>
-                            <div className={`${styles.todoCheckbox} ${styles.checked}`} />
-                            <div className={styles.inputContainer}>
-    
-    
-                            {/*<input value = {input} onChange={handleChange} id={styles.inputField} type="text" placeholder='Create a new todo...' />*/}
-                            <button type="button" className={styles.button} onClick={()=> addTodo()}>
-                            Create
-                            </button>
-                                {/* 
-                                <form onSubmit={()=> addTodo()}>
-                                    <input value = {input} onChange={handleChange} id={styles.inputField} type="text" placeholder='Create a new todo...' />
-                                </form>
-                                */}
-    
-                            </div>
-                            <div className={styles.iconContainer}>
-           
-                            </div>
-                        </div>
-                    ) : (
-                        <button type="button" className={styles.button} onClick={() => initializeUser()} disabled={transactionPending}>
-                            Initialize
-                        </button>
-                    )}
-                    <WalletMultiButton />
-                </div>
-    
+            <div className={styles.container}>    
                 <div className={styles.mainContainer}>
                     <Loading loading={loading}>
                         <TodoSection title="Tasks" todos={incompleteTodos} action={markTodo} />
