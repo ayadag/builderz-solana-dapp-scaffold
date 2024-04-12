@@ -15,11 +15,7 @@ const Index: React.FC = async () => {
         return (
             <div className={styles.container}>    
                 <div className={styles.mainContainer}>
-                    <Loading loading={loading}>
-                        <TodoSection title="Tasks" todos={incompleteTodos} action={markTodo} />
-    
-                        <TodoSection title="Completed" todos={completedTodos} action={removeTodo} />
-                    </Loading>
+                    <h1>Hello World!</h1>
                 </div>
             </div>
         )
