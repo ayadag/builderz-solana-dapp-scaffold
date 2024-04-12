@@ -19,7 +19,7 @@ export default async function RootLayout({ children }) {
   return (
     // <LayoutWrapper >
     <WalletConnectProvider>
-      <html lang="en">
+      {/* <html lang="en"> */}
          {/* <body> */}
           {/* <AppBar /> */}
           <main className={`min-h-screen`}>
@@ -28,7 +28,7 @@ export default async function RootLayout({ children }) {
           {/* <Footer /> */}
           <Toaster position="bottom-right" />
         {/* </body> */}
-      </html>
+      {/* </html> */}
       </WalletConnectProvider>
     // </LayoutWrapper>
   );
