@@ -1,6 +1,6 @@
 import React from 'react';
 
-import '../../styles/meeting.globals.css';
+import '../../styles/globals.css';
 // import '../styles/meeting.globals.css';
 
 
