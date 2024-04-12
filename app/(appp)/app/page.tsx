@@ -9,7 +9,9 @@ import { useTodo } from '../../../hooks/todo'
 // import styles from '../../../styles/Home.module.css'
 
 const Index: React.FC = async () => {
-        // const { incompleteTodos, markTodo } = useTodo()
+        const { incompleteTodos } = useTodo();
+
+
         const numbers = [1, 2, 3, 4, 5];
                     const listItems = numbers.map((number) =>
                       <li key={number.toString()}>
@@ -17,12 +19,14 @@ const Index: React.FC = async () => {
                         </li>
                     );
         
-        const incT = useTodo().incompleteTodos;
-        const incTL = incT.map((inct) => 
-        <li key={inct.toString()}>
-            {inct}
-        </li>
-        );
+        // const incT = useTodo().incompleteTodos;
+        // const incTL = incT.map((inct) => 
+        // <li key={inct.toString()}>
+        //     {inct}
+        // </li>
+        // );
+
+
         return (
             <div className='w-full h-screen flex justify-center items-center '>
 
@@ -35,7 +39,21 @@ const Index: React.FC = async () => {
 
                 <ul>{listItems}</ul>
 
-                <ul>{incTL}</ul>
+                {/* <ul>{incTL}</ul> */}
+
+
+                <ul>{
+                incompleteTodos.map((item) => {
+                    return (
+                        <li key={item.todoAccount}>
+                            {item.Content}
+                        </li>
+                    )
+                }
+                )
+                }</ul>
+
+
 
             </div>
             </div>
