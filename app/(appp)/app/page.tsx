@@ -8,7 +8,7 @@ import Loading from '../../../components/Loading'
 import TodoSection from '../../../components/todo/TodoSection'
 import styles from '../../../styles/Home.module.css'
 
-const Home =  () => {
+const Index: React.FC = async () => {
         const { initialized, initializeUser, loading, transactionPending, completedTodos, incompleteTodos, addTodo, markTodo, removeTodo } = useTodo()
     
     
@@ -56,4 +56,4 @@ const Home =  () => {
     }
     
 
-export default Home;
+export default Index;

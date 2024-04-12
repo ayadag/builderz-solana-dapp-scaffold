@@ -1,10 +1,10 @@
 import { Toaster } from 'sonner';
-import "../../../styles/meeting.globals.css";
+import "../../styles/globals.css";
 // import "/styles/globals.css";
 // import AppBar from '../components/layout/AppBar';
 // import Footer from '../components/layout/Footer';
-// import LayoutWrapper from './LayoutWrapper';
-import { WalletConnectProvider } from '../../../components/WalletConnectProvider'
+import LayoutWrapper from './LayoutWrapper';
+import { WalletConnectProvider } from '../../components/WalletConnectProvider'
 
 
 require("@solana/wallet-adapter-react-ui/styles.css");
@@ -17,7 +17,7 @@ export const metadata = {
 export default async function RootLayout({ children }) {
 
   return (
-    // <LayoutWrapper >
+    <LayoutWrapper >
     <WalletConnectProvider>
       {/* <html lang="en"> */}
          {/* <body> */}
@@ -30,7 +30,7 @@ export default async function RootLayout({ children }) {
         {/* </body> */}
       {/* </html> */}
       </WalletConnectProvider>
-    // </LayoutWrapper>
+    </LayoutWrapper>
   );
 }
 
