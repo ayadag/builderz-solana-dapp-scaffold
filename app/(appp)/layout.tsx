@@ -1,7 +1,7 @@
 import { Toaster } from 'sonner';
 import "../../styles/globals.css";
 // import "/styles/globals.css";
-// import AppBar from '../components/layout/AppBar';
+import AppBar2 from '../../components/layout/AppBar2';
 // import Footer from '../components/layout/Footer';
 import LayoutWrapper from './LayoutWrapper';
 import { WalletConnectProvider } from '../../components/WalletConnectProvider'
@@ -19,16 +19,16 @@ export default async function RootLayout({ children }: any) {
   return (
     <LayoutWrapper >
     {/* <WalletConnectProvider> */}
-      {/* <html lang="en"> */}
-         {/* <body> */}
-          {/* <AppBar /> */}
+      <html lang="en">
+         <body>
+          <AppBar2 />
           <main className={`min-h-screen`}>
             {children}
           </main>
           {/* <Footer /> */}
           <Toaster position="bottom-right" />
-        {/* </body> */}
-      {/* </html> */}
+        </body>
+      </html>
       {/* </WalletConnectProvider> */}
     </LayoutWrapper>
   );
