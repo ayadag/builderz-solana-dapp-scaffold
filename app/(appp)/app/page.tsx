@@ -47,6 +47,7 @@ const Index: React.FC = async () => {
                     return (
                         <li key={todo.account.idx}>
                             {todo.account.Content}
+                            {console.log(todo)}
                         </li>
                     )
                 }
