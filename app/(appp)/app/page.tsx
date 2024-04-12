@@ -8,7 +8,7 @@ import Loading from '../../../components/Loading'
 import TodoSection from '../../../components/todo/TodoSection'
 import styles from '../../../styles/Home.module.css'
 
-const Index: React.FC = async () => {
+const Index: React.FC = async (...pageProps) => {
         const { initialized, initializeUser, loading, transactionPending, completedTodos, incompleteTodos, addTodo, markTodo, removeTodo } = useTodo()
     
     
