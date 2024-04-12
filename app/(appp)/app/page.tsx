@@ -43,10 +43,10 @@ const Index: React.FC = async () => {
 
 
                 <ul>{
-                incompleteTodos.map((item) => {
+                incompleteTodos.map((todo) => {
                     return (
-                        <li key={item.todoAccount}>
-                            {item.Content}
+                        <li key={todo.account.idx}>
+                            {todo.account.Content}
                         </li>
                     )
                 }
