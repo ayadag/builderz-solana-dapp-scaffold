@@ -3,14 +3,17 @@
 // import Modal from '../../../components/Modal';
 
 // import { WalletMultiButton } from '@solana/wallet-adapter-react-ui'
-import { useTodo } from '../../../hooks/todo'
+// import { useTodo } from '../../../hooks/todo'
 // import Loading from '../../../components/Loading'
-import TodoSection from '../../../components/todo/TodoSection'
+// import TodoSection from '../../../components/todo/TodoSection'
 // import styles from '../../../styles/Home.module.css'
 
 const Index: React.FC = async () => {
-        const { incompleteTodos, markTodo } = useTodo()
-    
+        // const { incompleteTodos, markTodo } = useTodo()
+        const numbers = [1, 2, 3, 4, 5];
+                    const listItems = numbers.map((number) =>
+                      <li>{number}</li>
+                    );
         return (
             <div className='w-full h-screen flex justify-center items-center '>
 
@@ -19,7 +22,9 @@ const Index: React.FC = async () => {
             <div className="flex flex-col justify-center p-4 bg-inherit gap-10">
                 
                 <h2>Hello World!</h2>
-                <TodoSection title="Tasks" todos={incompleteTodos} action={markTodo} />
+                {/* <TodoSection title="Tasks" todos={incompleteTodos} action={markTodo} /> */}
+                
+                <ul>{listItems}</ul>
 
             </div>
             </div>
