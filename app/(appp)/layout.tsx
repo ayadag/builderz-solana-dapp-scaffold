@@ -18,7 +18,7 @@ export default async function RootLayout({ children }) {
 
   return (
     <LayoutWrapper >
-    <WalletConnectProvider>
+    {/* <WalletConnectProvider> */}
       {/* <html lang="en"> */}
          {/* <body> */}
           {/* <AppBar /> */}
@@ -29,7 +29,7 @@ export default async function RootLayout({ children }) {
           <Toaster position="bottom-right" />
         {/* </body> */}
       {/* </html> */}
-      </WalletConnectProvider>
+      {/* </WalletConnectProvider> */}
     </LayoutWrapper>
   );
 }
