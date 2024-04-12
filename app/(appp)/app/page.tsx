@@ -12,7 +12,9 @@ const Index: React.FC = async () => {
         // const { incompleteTodos, markTodo } = useTodo()
         const numbers = [1, 2, 3, 4, 5];
                     const listItems = numbers.map((number) =>
-                      <li>{number}</li>
+                      <li key={number.toString()}>
+                        {number}
+                        </li>
                     );
         return (
             <div className='w-full h-screen flex justify-center items-center '>
@@ -23,7 +25,7 @@ const Index: React.FC = async () => {
                 
                 <h2>Hello World!</h2>
                 {/* <TodoSection title="Tasks" todos={incompleteTodos} action={markTodo} /> */}
-                
+
                 <ul>{listItems}</ul>
 
             </div>
